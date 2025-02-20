@@ -1,0 +1,15 @@
+.serv-desc-img {
+    @include wh(300px, 200px);
+    @include ampl2;
+}
+
+.serv-text {
+    text-align: map-get($map: $parrafo-p, $key: justif);    
+    line-height: $interlin;
+    .t-negrita{
+        font-style: map-get($map: $parrafo-p, $key: cursiva);
+        font-weight: map-get($map: $parrafo-p, $key: negrita);
+        text-shadow: map-get($map: $parrafo-p, $key: sombra);
+    }
+}
+    

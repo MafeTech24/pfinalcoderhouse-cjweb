@@ -1,0 +1,22 @@
+/***** Comunicate ****/
+
+.botones .btn {
+    @include boton;
+    @include wh(200px, 45px);
+    @include ampl2;
+
+    &:hover {
+        color: $silverBlue;
+        @include anim-hover1;
+    }
+}
+
+.contact-a{
+    color: $inicial;
+    text-decoration: $ninguno;
+    &:hover {
+        color: $coolGray;
+        @include ampltext1;
+    }
+
+}

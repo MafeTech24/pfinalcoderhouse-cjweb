@@ -1,0 +1,38 @@
+/***** Mapa y Ubicación ****/
+
+.cont-enlac {
+    font-style: map-get($map: $parrafo-p, $key: cursiva);
+    @include ampltext3;
+    &:hover{
+        @include ampltext2;
+    }
+}
+
+.mapa{
+    @include ampl2;
+    &:hover{
+        @include anim-hover1;
+                        
+    }
+}
+
+.direccion {
+    font-size: $fta-xchica;
+
+    img {
+        @include wh(30px, 30px)
+    }
+    .dir-list{
+        .wp {
+            color: $inicial;
+            text-decoration: $ninguno;
+            &:hover {
+                color: $coolGray;
+                @include ampltext1;
+            }
+        }
+        .img-wp:hover{
+            @include ampltext2;
+        }
+    } 
+}

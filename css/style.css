@@ -1,3 +1,4 @@
+/*
 * {
     margin: 0;
     padding: 0;
@@ -10,9 +11,8 @@
     font-style: normal;
     font-size: 20px;
     text-align: center;
-}
-
-/** Barra de Navegación ***/
+} */
+/** Barra de Navegación 
 .navbar-est {
     background-color: #ADBBC6;
 }
@@ -32,9 +32,9 @@
 .nav-link .active .enlace #enlace:hover {
     color: #ECECEC;
     text-decoration: underline;
-}
+} ***/
 
-/** Main ***/
+/** Main 
 
 .container-estudio {
     background-color: #ECECEC;
@@ -43,7 +43,7 @@
 .videoport {
     width: 100%;
     height: 500px;
-}
+} 
 
 .descripcion .img-fluid {
     width: 280px;
@@ -52,8 +52,7 @@
 
 }
 
-.parrafo-desc,
-.parrafo-cont{
+.parrafo {
     text-align: justify;
     line-height: 2;
 }
@@ -64,7 +63,7 @@
 
 .resaltar {
     box-shadow: 2px 2px 10px #ADBBC6;
-}
+}  
 
 .comunicate .btn,
 .botones .btn,
@@ -88,19 +87,19 @@
 .dir-list .wp:hover {
     color: #8A8FA3;
     text-decoration: underline;
-}
+} 
 
 .direccion {
     font-size: 15px;
 
-}
+} 
 
 .direccion img {
     width: 30px;
     height: 30px;    
-}
+} ***/
 
-/* Footer */
+/* Footer 
 
 footer {
     background-color: #ADBBC6;
@@ -108,9 +107,6 @@ footer {
     font-weight: bolder;
 }
 
-footer h3 {
-    font-size: 25px;
-}
 
 #whatsapp-icon {
     position: fixed;
@@ -130,11 +126,11 @@ footer h3 {
   
 span {
     font-size: large;
-}
+} */
 
 
 
-/* Contacto */
+/* Contacto 
 
 .form-est h3 {
     padding: 10px;
@@ -170,9 +166,9 @@ span {
 #enviar:hover {
     color: #ADBBC6;
 
-}
+} */
 
-/* Servicios */
+/* Servicios 
 
 .serv-desc-img {
     width: 300px;
@@ -188,7 +184,7 @@ span {
 .serv-desc a {
     text-decoration: none;
     padding: auto;
-}
+} **/
 
 /* Fallos y Novedades */
 
@@ -204,11 +200,7 @@ span {
     text-align: left;
 }
 
-.text-not {
-    color: #0E1424;
-    font-size: 20px;
-    text-shadow: 1px 0.5px 1px #ECECEC;
-}
+
 
 
 /******* MEDIAQUERIES *********/
@@ -255,7 +247,7 @@ span {
         color: white;
         font-size: 40px;
 
-    } 
+    }  
     
 
     /** Contacto ***/
@@ -268,8 +260,5 @@ span {
         padding-bottom: 3px;
         margin-bottom: 0;
     }
-
-
-
 }
 

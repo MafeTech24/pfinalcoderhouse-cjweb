@@ -1,0 +1,26 @@
+/***** Descripción ****/
+
+.descripcion .img-fluid {
+    @include wh(280px, 250px);
+    float: left;
+    &:hover{
+        @include anim-hover1;                
+    }
+}
+
+.parrafo {
+    text-align: map-get($map: $parrafo-p, $key: justif);
+    line-height: map-get($map: $parrafo-p , $key: interlineado);
+
+    .t-negrita,
+    .resaltar {
+        font-style: $fcursiva;
+        font-weight: map-get($map: $parrafo-p, $key: negrita);
+        text-shadow: map-get($map: $parrafo-p, $key: sombra);
+    }
+
+    .resaltar {
+        font-weight: map-get($map: $parrafo-p, $key: negrita);
+        box-shadow: map-get($map: $parrafo-p, $key: resalta);
+    }
+}

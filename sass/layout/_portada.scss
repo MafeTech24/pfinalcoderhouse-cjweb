@@ -1,0 +1,12 @@
+/**** Portada ****/
+
+.videoport {
+    @include wh(100%, 500px);
+}
+
+.encab-princ,
+.encabe-sec,
+.encabe-terc {
+    font-style: map-get($map: $parrafo-p, $key: cursiva);
+    @include ampltext3;
+}

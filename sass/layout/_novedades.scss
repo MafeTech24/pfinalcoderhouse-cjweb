@@ -1,0 +1,15 @@
+.img-not {
+    margin: $cero;
+    opacity: 0.8;
+    &:hover{
+        @include ampl1;
+    }    
+}
+.enlace-not {
+    text-decoration: $ninguno;
+    color: $azulmarino;
+    text-shadow: map-get($map: $parrafo-p, $key: sombra2);
+    text-align: map-get($map: $parrafo-p, $key: centrado);
+}
+
+

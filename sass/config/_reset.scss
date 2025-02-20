@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    color: $gunmetal;
+    font-family: $fuente-princ;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: $fnormal;
+    font-size: $fta-medio;
+    text-align: map-get($map: $parrafo-p, $key: centrado );
+}

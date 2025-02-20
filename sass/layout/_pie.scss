@@ -1,0 +1,17 @@
+.pie {
+    background-color: $silverBlue;
+    font-size: $fta-xchica;
+    font-weight: $negr2;
+
+    .text-white .iconos{
+        @include ampl2;
+        &:hover{
+            color: $platinum;
+            @include ampltext2;    
+        }
+        
+    .text-span {
+        font-size: $fta-large;
+    }
+}
+}

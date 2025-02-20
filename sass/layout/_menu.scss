@@ -1,0 +1,24 @@
+/** Barra de Navegación - Bootstrap ***/
+
+
+.navbar-est {
+    background-color: $silverBlue;    
+    padding: 0;
+    .video-naveg {
+        @include wh(160px,80px);
+        &:hover{
+            @include ampltext2;
+        }
+    }    
+    .enlace {
+        text-decoration: none;
+        color: $gunmetal;
+        font-weight: bold;
+        &:hover,
+        #enlace:hover{
+            @include hover-uno;            
+            @include ampltext2;
+        }
+    }       
+}
+
