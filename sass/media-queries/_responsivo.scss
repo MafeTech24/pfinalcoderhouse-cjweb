@@ -1,0 +1,57 @@
+@media (max-width:768px) {
+
+    /** Index ***/
+
+    .navbar-est {
+        @include flex1;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+
+    .videoport {
+        height: 300px;
+    }
+
+    .descripcion .img-fluid {
+        float: $ninguno;
+        margin: 0 0 1rem 0;
+
+    }
+
+    .botones {
+        @include flex1;
+        flex-direction: column;
+        margin-bottom: $cero;
+        padding-bottom: $auto;
+    }
+
+    .whatsapp-icon{
+        display: block;
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        z-index: 1;
+        width: 100px;
+    }
+
+
+    .pie {  
+        .text-span {
+            font-size: $fta-xxchica;
+        }
+
+    }
+
+    /** Contacto ***/
+
+    .col-md-6 {
+        width: $compl;
+    }
+
+    .form-est h3 {
+        padding-bottom: 3px;
+        margin-bottom: $cero;
+    }
+}

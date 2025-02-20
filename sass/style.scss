@@ -1,0 +1,28 @@
+/***** Configuracion ****/
+
+@import './config/tipo';
+@import './config/colors';
+@import './config/mixin';
+@import './config/maps';
+@import './config/reset';
+
+
+/***** Layout  *****/
+
+@import './layout/menu';
+@import './layout/contenedor';
+@import './layout/portada';
+@import './layout/descripcion';
+@import './layout/comunicate';
+@import './layout/mapa-ubicacion';
+@import './layout/pie';
+@import './layout/servicios';
+@import './layout/contacto';
+@import './layout/novedades';
+
+
+
+
+/***** Media Queries *****/
+
+@import './media-queries/responsivo';
