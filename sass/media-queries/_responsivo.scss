@@ -1,57 +1,80 @@
-@media (max-width:768px) {
-
+@media (max-width:768px) {    
     /** Index ***/
-
-    .navbar-est {
-        @include flex1;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
+    .navbar {
+        padding-bottom: $fta-xxxchica;
+        .navbar-brand {
+            @include wh(70px,70px);            
+        }
+        .navbar-toggler:focus {
+            outline: none; 
+            box-shadow: none;} 
+        &:checked~.navbar-nav{
+            border: $ninguno !important;
+            outline: none;
+        }     
     }
-
-
-    .videoport {
-        height: 300px;
+    .container-estudio{
+        width: $compl;
+        padding: $cero $fta-xxxchica !important;
+        margin-bottom: $cero !important;
+    }    
+    .portada{        
+        .videoport {
+            height: 300px;
+        }
+    }    
+    .descripcion,
+    .comunicate {
+        margin: 0 auto !important;
     }
-
     .descripcion .img-fluid {
-        float: $ninguno;
-        margin: 0 0 1rem 0;
-
+    float: none ;
+    margin: 0 0 1rem 0;
     }
-
     .botones {
-        @include flex1;
-        flex-direction: column;
-        margin-bottom: $cero;
-        padding-bottom: $auto;
+    @include flex1;
+    flex-direction: column;
     }
-
     .whatsapp-icon{
         display: block;
         position: fixed;
-        right: 10px;
-        bottom: 10px;
+        right: $fta-xxxchica;
+        bottom: $fta-xxxchica;
         z-index: 1;
         width: 100px;
     }
-
-
-    .pie {  
-        .text-span {
-            font-size: $fta-xxchica;
-        }
-
+    .encabe-terc,
+    .cont-enlac{
+        margin-top: $fta-xchica;
+        margin-bottom: $fta-xchica;
     }
-
+    .pie {
+    .text-pie {
+        font-size: $fta-xxchica;
+        text-align: center;
+    }
+    }
+    /** Servicios ***/
+    .encabe-sec{
+        margin: $fta-xchica;
+        padding: $fta-xchica;
+    }
+    .serv{
+        .serv-desc-img{
+            margin: 0 auto;
+            @include wh(270px,160px);
+            padding-top: 0;        
+    }
+        .serv-text{
+            padding-top: $fta-xchica;
+        }    
+    }
     /** Contacto ***/
-
     .col-md-6 {
-        width: $compl;
+    width: $compl;
     }
-
     .form-est h3 {
-        padding-bottom: 3px;
-        margin-bottom: $cero;
+    padding-bottom: 3px;
+    margin-bottom: $cero;
     }
 }

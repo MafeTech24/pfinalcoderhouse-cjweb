@@ -1,15 +1,29 @@
-.serv-desc-img {
-    @include wh(300px, 200px);
-    @include ampl2;
-}
-
-.serv-text {
-    text-align: map-get($map: $parrafo-p, $key: justif);    
-    line-height: $interlin;
-    .t-negrita{
-        font-style: map-get($map: $parrafo-p, $key: cursiva);
-        font-weight: map-get($map: $parrafo-p, $key: negrita);
-        text-shadow: map-get($map: $parrafo-p, $key: sombra);
+.serv{
+    width: 75%;
+    margin: 0 auto;
+    .serv-desc-img {
+        @include wh(300px, 180px);
+        padding-top: 30px;
+        @include ampl2;
+    }    
+    .serv-text {
+        text-align: map-get($map: $parrafo-p, $key: justif);
+        line-height: map-get($map: $parrafo-p, $key: interlineado);
+        font-family: $fuente-sec;
+        font-weight: $fdelagado;    
+        .p-negrita {
+            font-family: $fuente-sec;
+            font-style: normal;
+            font-weight: $negr2;
+        }
     }
 }
-    
+.botones .btn {
+    @include boton;
+    @include wh(200px,50px);
+    @include ampl2;
+    &:hover {
+        color: $silverBlue;
+        @include anim-hover1;
+    }
+}

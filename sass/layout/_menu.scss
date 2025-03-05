@@ -1,24 +1,26 @@
 /** Barra de Navegación - Bootstrap ***/
-
-
-.navbar-est {
-    background-color: $silverBlue;    
-    padding: 0;
-    .video-naveg {
-        @include wh(160px,80px);
-        &:hover{
-            @include ampltext2;
-        }
+.navbar {
+    background-color: $silverBlue;
+    .navbar-brand{
+        @include wh(80px,80px);
     }    
-    .enlace {
+    .nav-link {
         text-decoration: none;
         color: $gunmetal;
-        font-weight: bold;
+        font-weight: map-get($map: $parrafo-p, $key: negrita);
         &:hover,
         #enlace:hover{
             @include hover-uno;            
             @include ampltext2;
         }
-    }       
+    }
+    .navbar-toggler {
+        border: $ninguno; 
+        border-radius: $cero;
+        outline: none;
+    }    
 }
+
+
+
 

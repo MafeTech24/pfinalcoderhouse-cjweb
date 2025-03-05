@@ -2,15 +2,13 @@
     background-color: $silverBlue;
     font-size: $fta-xchica;
     font-weight: $negr2;
-
-    .text-white .iconos{
+    overflow: hidden;
+    .text-white .iconos{        
         @include ampl2;
         &:hover{
-            color: $platinum;
-            @include ampltext2;    
-        }
-        
-    .text-span {
+            color: $platinum;    
+        }        
+    .text-pie {
         font-size: $fta-large;
     }
 }

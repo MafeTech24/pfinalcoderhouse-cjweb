@@ -2,18 +2,16 @@
     color: $platinum;
     text-decoration: underline;
 }
-
 @mixin hover-dos {
     color: $coolGray;
     text-decoration: underline;
 }
-
 @mixin wh($ancho, $alto) {
     width: $ancho;
     height: $alto;
 }
-
 @mixin boton {
+    margin: 10px;
     background-color: $charcoalBlue;
     border-color: $charcoalBlue;
     color: $platinum;
@@ -21,18 +19,14 @@
     font-weight: bolder;
     border-radius: 5px;
 }
-
-@mixin flex1{
+@mixin flex1 {
     display: flex;
     align-items: center;
 }
-
 //*** Animaciones ****//
-
 @mixin anim-hover1 {
-    -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-
+    -webkit-animation: shadow-drop-2-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: shadow-drop-2-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     @-webkit-keyframes shadow-drop-2-center {
         0% {
             -webkit-transform: translateZ(0);
@@ -40,7 +34,6 @@
             -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
             box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
         }
-
         100% {
             -webkit-transform: translateZ(50px);
             transform: translateZ(50px);
@@ -48,7 +41,6 @@
             box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.4);
         }
     }
-
     @keyframes shadow-drop-2-center {
         0% {
             -webkit-transform: translateZ(0);
@@ -56,7 +48,6 @@
             -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
             box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
         }
-
         100% {
             -webkit-transform: translateZ(50px);
             transform: translateZ(50px);
@@ -65,99 +56,85 @@
         }
     }
 }
-
 @mixin ampl1 {
     -webkit-animation: kenburns-top 5s ease-out both;
     animation: kenburns-top 5s ease-out both;
-
     @-webkit-keyframes kenburns-top {
         0% {
-          -webkit-transform: scale(1) translateY(0);
-                  transform: scale(1) translateY(0);
-          -webkit-transform-origin: 50% 16%;
-                  transform-origin: 50% 16%;
+            -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+            -webkit-transform-origin: 50% 16%;
+            transform-origin: 50% 16%;
         }
         100% {
-          -webkit-transform: scale(1.25) translateY(-15px);
-                  transform: scale(1.25) translateY(-15px);
-          -webkit-transform-origin: top;
-                  transform-origin: top;
+            -webkit-transform: scale(1.25) translateY(-15px);
+            transform: scale(1.25) translateY(-15px);
+            -webkit-transform-origin: top;
+            transform-origin: top;
         }
-      }
-      @keyframes kenburns-top {
+    }
+    @keyframes kenburns-top {
         0% {
-          -webkit-transform: scale(1) translateY(0);
-                  transform: scale(1) translateY(0);
-          -webkit-transform-origin: 50% 16%;
-                  transform-origin: 50% 16%;
+            -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+            -webkit-transform-origin: 50% 16%;
+            transform-origin: 50% 16%;
         }
         100% {
-          -webkit-transform: scale(1.25) translateY(-15px);
-                  transform: scale(1.25) translateY(-15px);
-          -webkit-transform-origin: top;
-                  transform-origin: top;
+            -webkit-transform: scale(1.25) translateY(-15px);
+            transform: scale(1.25) translateY(-15px);
+            -webkit-transform-origin: top;
+            transform-origin: top;
         }
-      }
+    }
 }
-
 @mixin ampl2 {
-    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-
+    -webkit-animation: scale-up-center 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-center 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     @-webkit-keyframes scale-up-center {
         0% {
             -webkit-transform: scale(0.5);
             transform: scale(0.5);
         }
-
         100% {
             -webkit-transform: scale(1);
             transform: scale(1);
         }
     }
-
     @keyframes scale-up-center {
         0% {
             -webkit-transform: scale(0.5);
             transform: scale(0.5);
         }
-
         100% {
             -webkit-transform: scale(1);
             transform: scale(1);
         }
     }
 }
-
 @mixin ampltext1 {
     -webkit-animation: text-shadow-drop-tr 0.6s both;
     animation: text-shadow-drop-tr 0.6s both;
-
     @-webkit-keyframes text-shadow-drop-tr {
         0% {
             text-shadow: 0 0 0 rgba(0, 0, 0, 0);
         }
-
         100% {
             text-shadow: 6px -6px 18px rgba(0, 0, 0, 0.35);
         }
     }
-
     @keyframes text-shadow-drop-tr {
         0% {
             text-shadow: 0 0 0 rgba(0, 0, 0, 0);
         }
-
         100% {
             text-shadow: 6px -6px 18px rgba(0, 0, 0, 0.35);
         }
     }
 }
-
 @mixin ampltext2 {
     -webkit-animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-
     @-webkit-keyframes focus-in-expand-fwd {
         0% {
             letter-spacing: -0.5em;
@@ -167,7 +144,6 @@
             filter: blur(12px);
             opacity: 0;
         }
-
         100% {
             -webkit-transform: translateZ(0);
             transform: translateZ(0);
@@ -176,7 +152,6 @@
             opacity: 1;
         }
     }
-
     @keyframes focus-in-expand-fwd {
         0% {
             letter-spacing: -0.5em;
@@ -186,7 +161,6 @@
             filter: blur(12px);
             opacity: 0;
         }
-
         100% {
             -webkit-transform: translateZ(0);
             transform: translateZ(0);
@@ -196,34 +170,33 @@
         }
     }
 }
-
 @mixin ampltext3 {
     -webkit-animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
     animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
     @-webkit-keyframes tracking-in-contract {
         0% {
-          letter-spacing: 1em;
-          opacity: 0;
+            letter-spacing: 1em;
+            opacity: 0;
         }
         40% {
-          opacity: 0.6;
+            opacity: 0.6;
         }
         100% {
-          letter-spacing: normal;
-          opacity: 1;
+            letter-spacing: normal;
+            opacity: 1;
         }
-      }
-      @keyframes tracking-in-contract {
+    }
+    @keyframes tracking-in-contract {
         0% {
-          letter-spacing: 1em;
-          opacity: 0;
+            letter-spacing: 1em;
+            opacity: 0;
         }
         40% {
-          opacity: 0.6;
+            opacity: 0.6;
         }
         100% {
-          letter-spacing: normal;
-          opacity: 1;
+            letter-spacing: normal;
+            opacity: 1;
         }
-      }
+    }
 }

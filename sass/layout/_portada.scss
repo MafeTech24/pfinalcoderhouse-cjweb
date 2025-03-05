@@ -1,9 +1,7 @@
 /**** Portada ****/
-
-.videoport {
-    @include wh(100%, 500px);
+.video-port {
+    @include wh(100%,100%);    
 }
-
 .encab-princ,
 .encabe-sec,
 .encabe-terc {

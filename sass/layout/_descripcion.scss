@@ -1,26 +1,28 @@
 /***** Descripción ****/
-
-.descripcion .img-fluid {
-    @include wh(280px, 250px);
-    float: left;
-    &:hover{
-        @include anim-hover1;                
+.descripcion{
+    .img-fluid {
+        @include wh(70%, 3%);
+        &:hover{
+            @include anim-hover1;                
+        }
     }
-}
-
-.parrafo {
-    text-align: map-get($map: $parrafo-p, $key: justif);
-    line-height: map-get($map: $parrafo-p , $key: interlineado);
-
-    .t-negrita,
-    .resaltar {
-        font-style: $fcursiva;
-        font-weight: map-get($map: $parrafo-p, $key: negrita);
-        text-shadow: map-get($map: $parrafo-p, $key: sombra);
-    }
-
-    .resaltar {
-        font-weight: map-get($map: $parrafo-p, $key: negrita);
-        box-shadow: map-get($map: $parrafo-p, $key: resalta);
-    }
+    .parrafo {
+        text-align: map-get($map: $parrafo-p, $key: justif);
+        line-height: map-get($map: $parrafo-p, $key: interlineado);
+        font-family: $fuente-sec;
+        font-weight: $fdelagado;
+        .t-negrita,
+        .resaltar {
+            font-family: $fuente-sec;
+            font-style: normal;
+            font-weight: $negr2;
+        }
+        #sombreado{
+            font-size: $fta-grande2;
+            font-style: $fcursiva;
+            font-family: $fuente-princ;
+            box-shadow: map-get($map: $parrafo-p, $key: resalta);
+            text-shadow: map-get($map: $parrafo-p, $key: sombra1);
+        }
+    } 
 }

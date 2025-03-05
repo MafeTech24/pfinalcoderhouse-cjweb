@@ -1,8 +1,11 @@
 .formulario-cont {
     label {
-        height: $fta-medio;
+        height: $fta-medio;        
     }
-
+    .form-control{
+        width: 70%;
+        margin: 0 auto;
+    }
     input,
     textarea {
         height: $fta-grande3;
@@ -13,6 +16,8 @@
         color: $platinum;
         padding-left: $fta-xxchica;
         &::placeholder {
+            font-family: $fuente-sec;
+            font-weight: $fdelagado;
             color: $platinum;
             font-size: $fta-large;
             padding-left: $fta-xxchica;
@@ -20,16 +25,17 @@
         }
     }
 }
-
 .mensaje-est #enviar{
+    font-family: $fuente-princ;
+    text-align: center;
     @include boton;
-    @include wh(200px,45px);
+    @include wh(200px,50px);
+    @include ampl2;
     &:hover {
         color: $silverBlue;
-        @include ampl2; 
+        @include anim-hover1; 
     }
 }
-
 .whatsapp-icon{
     display: none;
 }

@@ -4,9 +4,9 @@
     width: 100%;
     box-sizing: border-box;
     color: $gunmetal;
-    font-family: $fuente-princ;
+    font-family: $fuente-princ,$fuente-sec;
     font-optical-sizing: auto;
-    font-weight: lighter;
+    font-weight: $fdelagado;
     font-style: $fnormal;
     font-size: $fta-medio;
     text-align: map-get($map: $parrafo-p, $key: centrado );
