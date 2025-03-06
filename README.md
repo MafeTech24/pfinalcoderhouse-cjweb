@@ -1,3 +1,4 @@
+ # PROYECTO FINAL - CODERHOUSE
  # Estudio Jurídico Dr. Cristian Martínez
 
 Este proyecto es el resultado del trabajo final del curso de Desarrollo Web en Coderhouse. Se trata de un sitio web para el ***Estudio Jurídico del Dr. Cristian Martínez*** ubicado en la Ciudad de Córdoba, Argentina, especializado en:
@@ -52,7 +53,7 @@ En el menú de navegación, el logo se muestra como un **video** que fue creado 
 
 Para incluir una imagen en HTML, se utiliza la etiqueta **`<img>`**. Aquí tienes un ejemplo básico:
 ```html
-<img src="./assets/logo.png.jpg" alt="Imagen Logo del Estudio" />
+<img src="./assets/img-logo.webp" alt="Imagen Logo del Estudio" />
 ```
 
 - **src:** Especifica la ruta de la imagen (puede ser una ruta relativa o un enlace URL).
@@ -85,11 +86,11 @@ En nuestro sitio el logo y la portada contienen los siguientes videos (**haz cli
 
 - **Video del Logo:**
 
-[![Video Introducción Estudio Jurídico](./assets/img-logo.png)](https://drive.google.com/file/d/1790N2zcJidXwYbPY7QEXctXXvm3sGnlE/view?usp=sharing)
+[![Video Introducción Estudio Jurídico](./assets/img-logo.webp)](https://drive.google.com/file/d/1790N2zcJidXwYbPY7QEXctXXvm3sGnlE/view?usp=sharing)
 
 - **Video de Portada**
 
-[![Video Introducción Estudio Jurídico](./assets/img-portada.png)](https://drive.google.com/file/d/1JrFvCvm6fNiMlEzSkBMAVmH80tP8kQkB/view?usp=sharing)
+[![Video Introducción Estudio Jurídico](./assets/iportada.webp)](https://drive.google.com/file/d/1JrFvCvm6fNiMlEzSkBMAVmH80tP8kQkB/view?usp=sharing)
 
 ## Formulario de Contacto
 
@@ -144,16 +145,16 @@ Para crear un formulario en HTML, se utiliza la etiqueta **`<form>`**, junto con
 
 En este Proyecto el formulario quedó así:
 
-![](./assets/print3.png)
+![](./assets/print3.webp)
 
 ## Aquí comparto algunas imagenes del Sitio
 
-![](./assets/print1.png)
+![](./assets/print1.webp)
 
-![](./assets/print2.png)
+![](./assets/print2.webp)
 
-![](./assets/print4.png)
+![](./assets/print4.webp)
   
 ### Te invito que accedas al sitio a través del siguiente Enlace
 
-[Estudio Juridico Dr. Cristian Martinez](https://mafetech24.github.io/3ra-entrega-cjweb/)
+[Estudio Juridico Dr. Cristian Martinez](https://mafetech24.github.io/pfinalcoderhouse-cjweb/)
